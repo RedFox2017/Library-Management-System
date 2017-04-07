@@ -1,0 +1,98 @@
+<html>
+<head>
+    <div style="position: absolute; height: 150px; width: 1350px;background-image:url(IMAGES/HEAD4.jpg)">
+       </div> 
+<script>
+    function check(f1)
+    {
+       var a= document.getElementById("na").value;   
+    var  c= document.getElementById("e").value;
+    var d= document.getElementById("b1").value;
+    var f= parseInt(document.getElementById("y1").value);
+    var g= parseInt(document.getElementById("p1").value);
+    var h= document.getElementById("b2").value;
+     var i= parseInt(document.getElementById("y2").value);
+    var j= parseInt(document.getElementById("p2").value);
+     var k= document.getElementById("b2").value;
+     var l= parseInt(document.getElementById("y2").value);
+    var m= parseInt(document.getElementById("p2").value);
+    
+        
+        
+        
+        if(a=="")
+          {
+            alert("Please fill name");
+            return false;
+        }
+       else if(e=="")
+           {
+               alert("Please fill enrollment number");
+           return false;
+           
+           }
+           else if(p=="")
+               {
+                   alert("Please fill the mendatory box");
+            return false;
+            
+               }
+               else if(s=="")
+                   {
+                       alert("Please fill all mendatory boxes");
+                        return false;
+                   }
+                   else if(b=="")
+                       {
+                           alert("Please select one");
+            return false;
+            
+                       }
+                   else if(em=="")
+                       {
+                           alert("Please fill all mendatory box");
+            return false;
+            
+                       }
+   else 
+       return true;
+    
+    }
+</script>
+</head>
+<body><br><br>
+      <br><br>
+    <div style="position:absolute;height:350%;width:1350;color:white;background-color:lightskyblue "><br><br>
+ 
+        <div align="center"> <img src="IMAGES/regb1.jpg"></div>
+        <h3 align="center">
+        <form action="StdRegServ"  onsubmit="check(this.form)">
+                &nbsp&nbsp&nbspNAME:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="sname" id="na"><br><br>
+                &nbsp&nbspENROLLMENT_No.:&nbsp&nbsp<input type="text" name="senroll" id="e"><br><br>
+                &nbsp
+SEMESTER:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="ssem" id="s"><br></br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBRANCH:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name="b">
+   
+<option value="cs">COMPUTER SCIENCE
+<option value="ci">CIVIL ENGINEERING
+<option value="ec">ELECTRONICS AND COMMUNICATION
+<option value="mech">MECHANICAL ENGINEERING
+<option value="elx">ELECTRICAL ENGINEERING
+</select><br><br>
+</select>
+EMAIL ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="smail" id="em"><br></br>
+<input type="hidden" name="utyp" value="Student">
+&nbsp&nbsp<input type="submit" value="SUBMIT">
+
+</form>
+        </h3>
+</div>
+</body>
+</html>
+
+
+
+
+   
+
+

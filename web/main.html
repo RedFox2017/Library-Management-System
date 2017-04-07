@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+   <div style="position: absolute; height: 100px; width:100%;background-image:url(IMAGES/HEAD4.jpg)">
+       </div> 
+    <script language="javascript" type="text/javascript">
+var timerid = 0;
+var images = new Array(	"./IMAGES/Albumphoto432.png","./IMAGES/Albumphoto466.png", "./IMAGES/Albumphoto471.png","./IMAGES/Albumphoto479.png","./IMAGES/Albumphoto480.png");
+var countimages = 0;
+function startTime()
+{
+
+	if(timerid)
+	{
+		timerid = 0;
+	}
+	var tDate = new Date();
+	
+	if(countimages == images.length)
+	{
+		countimages = 0;
+	}
+	
+		document.getElementById("img1").src = images[countimages];
+			
+	countimages++;
+	timerid = setTimeout("startTime()", 3000);
+	
+}
+</script>
+
+</head>
+    <body  onload="startTime()" style = "background-image:url(IMAGES/blue.jpg);background-size: 1370px;background-repeat: no-repeat">
+        <div style="position:absolute;top:100px;height:50px;width:100%">
+<table align="center" cellpadding=15>
+<tr>
+<td > <a href="home.html" style="color:yellow">LOGIN </a></td>
+<td > <a href="contactus.html" style="color:yellow"> CONTACT US</a> </td>
+<td > <a href="RegType.html" style="color: yellow">REGISTRATION </a></td>
+<td > <a href="tandc.html" style="color:yellow"> TERMS AND CONDITIONS</a></td>
+</tr>
+</table>
+</div>
+<div style="position: absolute;top: 150px;height:90%;width:100%;">
+    <h1 align="right" style="margin-right: 20px">  <img id="img1" src=".\ims\ims1.jpg" height="400" width="800px"></h1>
+
+   </div>
+        <div style="position:absolute;top:570px;height:5%;width:100%;color: red"><marquee behaviour="slide" direction="right"><h3> <pre>DIT   UNIVERSITY</pre></h3></marquee></div>
+
+    </body>
+</html>
